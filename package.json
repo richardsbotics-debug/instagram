@@ -1,0 +1,23 @@
+{
+  "name": "ai-reels-pipeline",
+  "version": "1.0.0",
+  "description": "Automated Instagram Reels pipeline: AI avatars, AI B-roll, and Remotion rendering orchestrated through Claude Code.",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts DynamicReel out/reel.mp4 --codec=h264"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.428",
+    "@remotion/google-fonts": "4.0.428",
+    "@remotion/media": "4.0.428",
+    "@remotion/transitions": "4.0.428",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.428"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,5 @@
+anthropic
+requests
+mlx-whisper; platform_machine == "arm64" and sys_platform == "darwin"
+openai-whisper; platform_machine != "arm64" or sys_platform != "darwin"
+google-genai

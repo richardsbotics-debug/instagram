@@ -1,0 +1,29 @@
+.env
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+
+# Generated media (large binaries, keep repo lean)
+public/avatars/*.mp4
+public/broll/clips/*.mp4
+public/broll/clips/*.webm
+public/broll/clips/*.mov
+public/broll/topics/**/*.png
+public/broll/topics/**/*.jpg
+public/broll/topics/**/*.jpeg
+public/broll/topics/**/*.webp
+out/*.mp4
+raw-footage/*
+heygen/output/*.mp4
+heygen/output/*.json
+ai-video-exploration/outputs/**
+!ai-video-exploration/outputs/.gitkeep
+
+# Keep placeholders
+!**/.gitkeep
+
+# Pipeline run state (per-reel working data)
+pipeline/agents/output/*
+!pipeline/agents/output/.gitkeep
